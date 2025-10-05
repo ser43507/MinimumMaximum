@@ -1,20 +1,35 @@
-// MinimumMaximum.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+* File: MinimumMaximum
+* Programmer: Sarah Roberts
+* Date: 10/3/2025
+*/
+//This program is designed to determine which number is the smaller and which is the larger.
+
 
 #include <iostream>
+using namespace std; 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //getting numbers
+    double num1, num2; 
+    cout << "Please enter the first number : "; 
+    cin >> num1; 
+    cout << "Please enter the second number : "; 
+    cin >> num2; 
+
+    //using conditional operator extablishing which # is smaller/larger =
+    double smaller = (num1 < num2) ? num1 : num2 ; 
+    double larger = (num1 > num2) ? num1 : num2; 
+
+    //displaying results 
+    cout << "The smaller number is : " << smaller << endl; 
+    cout << "The larger number is : " << larger << endl; 
+    
+
+    return 0; 
+    
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
